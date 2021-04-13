@@ -6,5 +6,5 @@ WHERE ProductID = ANY
   FROM OrderDetails
   WHERE Quantity = 10);
   
-SELECT Abs(-243.5) AS AbsNum;
+SELECT Abs(-243.5) AS AbsNum -- dkndkln dskgn dslkng kndsklng lkdsng 
 ```
