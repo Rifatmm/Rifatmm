@@ -1,4 +1,4 @@
-```ruby
+```sql
 SELECT ProductName
 FROM Products
 WHERE ProductID = ANY
