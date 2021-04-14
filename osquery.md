@@ -8,4 +8,9 @@ WHERE ProductID = ANY
   
 SELECT Abs(-243.5) AS AbsNum -- dkndkln dskgn dslkng kndsklng lkdsng 
 SELECT PI();
+PI(123);
+AVG(53)
+COS(2);
+COUNT(ProductID)
+
 ```
