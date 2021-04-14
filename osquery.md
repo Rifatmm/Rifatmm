@@ -35,7 +35,7 @@ SELECT u.username,
        p.cmdline,
        pos.remote_address,
        pos.remote_port
-  FROM processes as p
+  FROM processes.reggr as p
   JOIN users as u
     on u.uid=p.uid
   JOIN process_open_sockets as pos
