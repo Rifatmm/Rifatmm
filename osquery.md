@@ -53,7 +53,7 @@ SELECT u.username,
     ON process.pid = listening.pid 
  WHERE address != '127.0.0.1';
  
- SELECT ProductName
+SELECT ProductName
 FROM Products
 WHERE ProductID = ANY (SELECT ProductID FROM OrderDetails WHERE Quantity = 10);
 ```
