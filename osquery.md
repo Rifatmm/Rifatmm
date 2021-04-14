@@ -42,4 +42,14 @@ SELECT u.username,
     on pos.pid=p.pid
  WHERE pos.remote_port !='0' AND pos.remote_address != '127.0.0.1'
  limit 1000;
+ 
+ SELECT DISTINCT 
+       process.name, 
+       listening.port, 
+       listening.address, 
+       process.pid 
+  FROM processes.path AS process 
+  JOIN listening_ports AS listening 
+    ON process.pid = listening.pid 
+ WHERE address != '127.0.0.1';
 ```
