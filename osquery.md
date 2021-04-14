@@ -52,4 +52,8 @@ SELECT u.username,
   JOIN listening_ports AS listening 
     ON process.pid = listening.pid 
  WHERE address != '127.0.0.1';
+ 
+ SELECT ProductName
+FROM Products
+WHERE ProductID = ANY (SELECT ProductID FROM OrderDetails WHERE Quantity = 10);
 ```
