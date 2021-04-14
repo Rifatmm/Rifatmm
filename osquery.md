@@ -7,4 +7,5 @@ WHERE ProductID = ANY
   WHERE Quantity = 10);
   
 SELECT Abs(-243.5) AS AbsNum -- dkndkln dskgn dslkng kndsklng lkdsng 
+SELECT PI();
 ```
