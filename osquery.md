@@ -8,9 +8,15 @@ WHERE ProductID = ANY
   
 SELECT Abs(-243.5) AS AbsNum -- dkndkln dskgn dslkng kndsklng lkdsng 
 SELECT PI();
-PI(123);
-AVG(53)
+
+SELECT AVG(Price) AS AveragePrice FROM Products;
 COS(2);
 COUNT(ProductID)
-
+SELECT PI();
+SELECT COS(2);
+SELECT ATAN(2.5);
+SELECT FLOOR(25.75) AS FloorValue;
+SELECT LOG(2);
+SELECT CEILING(25.75) AS CeilValue;
+SELECT COUNT(ProductID) AS NumberOfProducts FROM Products;
 ```
