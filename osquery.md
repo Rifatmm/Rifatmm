@@ -19,4 +19,10 @@ SELECT FLOOR(25.75) AS FloorValue;
 SELECT LOG(2);
 SELECT CEILING(25.75) AS CeilValue;
 SELECT COUNT(ProductID) AS NumberOfProducts FROM Products;
+/* efefmeklfel;kfmew
+
+efewfepowfewofkewofke
+efowefewofjpeowfjew
+ewfkewpfkewfpokew
+*/
 ```
