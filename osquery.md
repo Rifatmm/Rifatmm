@@ -25,4 +25,21 @@ efewfepowfewofkewofke
 efowefewofjpeowfjew
 ewfkewpfkewfpokew
 */
+
+SELECT u.username,
+       p.pid,
+       p.name,
+       pos.local_address,
+       pos.local_port,
+       p.path,
+       p.cmdline,
+       pos.remote_address,
+       pos.remote_port
+  FROM processes as p
+  JOIN users as u
+    on u.uid=p.uid
+  JOIN process_open_sockets as pos
+    on pos.pid=p.pid
+ WHERE pos.remote_port !='0' AND pos.remote_address != '127.0.0.1'
+ limit 1000;
 ```
