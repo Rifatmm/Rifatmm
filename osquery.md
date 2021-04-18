@@ -83,4 +83,6 @@ SELECT
   FROM (SELECT *,COUNT(*) AS cnt
   FROM registry
  WHERE path = 'HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\LanmanServer\Parameters\SMB1' AND data != 1);
+ 
+ SELECT CONCAT('W3Schoolsefewwfwfw', '.comwefewfefe');
 ```
