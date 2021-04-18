@@ -60,4 +60,5 @@ SELECT CEILING(25.75) AS CeilValue;
 SELECT MAX(Price) AS LargestPrice FROM Products;
 SELECT MIN(Price) AS SmallestPrice FROM Products;
 SELECT ROUND(235.415, 2) AS RoundValue;
+SELECT SUM(Quantity) AS TotalItemsOrdered FROM OrderDetails;
 ```
