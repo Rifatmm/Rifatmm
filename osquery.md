@@ -62,4 +62,12 @@ SELECT MIN(Price) AS SmallestPrice FROM Products;
 SELECT ROUND(235.415, 2) AS RoundValue;
 SELECT SUM(Quantity) AS TotalItemsOrdered FROM OrderDetails;
 SELECT RAND(6);
+SELECT p.name,s.remote_address,s.remote_port,s.local_address,s.local_port,s.family,s.protocol
+  FROM process_open_sockets as s
+  JOIN processes as p
+    ON s.pid=p.pid
+ WHERE s.remote_address NOT LIKE '127.0.0.1'
+   AND s.remote_address NOT LIKE '0.0.0.0'
+   AND s.remote_address NOT LIKE '::'
+   AND s.remote_address NOT LIKE '0';
 ```
