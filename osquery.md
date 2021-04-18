@@ -87,4 +87,13 @@ SELECT
  SELECT CONCAT('W3Schoolsefewwfwfw', '.comwefewfefe');
  
  SELECT LOWER("SQL Tutorial is FUN!");
+ 
+ SELECT CONCAT('W3Schoolsefewwfwfw', 'comwefewfefe');
+
+SELECT LOWER("SQL Tutorial is FUN!");
+SELECT INSER("W3Schools.com", 1, 9, "Example");
+SELECT INSTR("W3Schools.com", "3") AS MatchPosition;
+SELECT LTRIM("     SQL Tutorial") AS LeftTrimmedString;
+SELECT CONCAT('QA','Testing');
+
 ```
