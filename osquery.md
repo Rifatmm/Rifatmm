@@ -56,4 +56,5 @@ SELECT u.username,
 SELECT ProductName
 FROM Products
 WHERE ProductID = ANY (SELECT ProductID FROM OrderDetails WHERE Quantity = 10);
+SELECT CEILING(25.75) AS CeilValue;
 ```
