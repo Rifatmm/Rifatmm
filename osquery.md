@@ -70,4 +70,7 @@ SELECT p.name,s.remote_address,s.remote_port,s.local_address,s.local_port,s.fami
    AND s.remote_address NOT LIKE '0.0.0.0'
    AND s.remote_address NOT LIKE '::'
    AND s.remote_address NOT LIKE '0';
+   SELECT column1, column2, ...
+FROM table_name
+WHERE NOT condition;
 ```
