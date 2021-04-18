@@ -95,6 +95,9 @@ SELECT INSER("W3Schools.com", 1, 9, "Example");
 SELECT INSTR("W3Schools.com", "3") AS MatchPosition;
 SELECT LTRIM("     SQL Tutorial") AS LeftTrimmedString;
 SELECT CONCAT('QA','Testing');
-SELECT os_version.platform FROM os_version
+SELECT os_version.platform FROM os_version;
+SELECT platform FROM os_version;
+SELECT cpu_info.manufacturer FROM cpu_info;
+SELECT manufacturer FROM cpu_info;
 
 ```
