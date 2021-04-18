@@ -85,4 +85,6 @@ SELECT
  WHERE path = 'HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\LanmanServer\Parameters\SMB1' AND data != 1);
  
  SELECT CONCAT('W3Schoolsefewwfwfw', '.comwefewfefe');
+ 
+ SELECT LOWER("SQL Tutorial is FUN!");
 ```
