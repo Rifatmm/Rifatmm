@@ -59,5 +59,5 @@ WHERE ProductID = ANY (SELECT ProductID FROM OrderDetails WHERE Quantity = 10);
 SELECT CEILING(25.75) AS CeilValue;
 SELECT MAX(Price) AS LargestPrice FROM Products;
 SELECT MIN(Price) AS SmallestPrice FROM Products;
-SELECT PI();
+SELECT ROUND(235.415, 2) AS RoundValue;
 ```
