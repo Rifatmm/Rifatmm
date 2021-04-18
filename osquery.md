@@ -74,4 +74,12 @@ SELECT p.name,s.remote_address,s.remote_port,s.local_address,s.local_port,s.fami
 FROM table_name
 WHERE NOT condition;
 SELECT * FROM Customers WHERE NOT Country='Germany';
+SELECT 
+  CASE cnt
+  WHEN 1 THEN "DISABLED"
+  ELSE "ENABLED"
+   END "SMBv1 Status"
+  FROM (SELECT *,COUNT(*) AS cnt
+  FROM registry
+ WHERE path = 'HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\LanmanServer\Parameters\SMB1' AND data != 1);
 ```
