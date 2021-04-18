@@ -40,7 +40,7 @@ SELECT u.username,
     on u.uid=p.uid
   JOIN process_open_sockets as pos
     on pos.pid=p.pid
- WHERE pos.remote_port !='0' AND pos.remote_address != '127.0.0.1'
+ WHERE pos.remote_port !='0' OR pos.remote_address != '127.0.0.1'
  limit 1000;
  
  SELECT DISTINCT 
