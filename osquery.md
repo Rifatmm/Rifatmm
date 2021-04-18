@@ -73,4 +73,6 @@ SELECT p.name,s.remote_address,s.remote_port,s.local_address,s.local_port,s.fami
    SELECT column1, column2, ...
 FROM table_name
 WHERE NOT condition;
+SELECT * FROM Customers
+WHERE NOT Country='Germany';
 ```
